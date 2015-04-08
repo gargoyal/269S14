@@ -1,2 +1,4 @@
 # 269S14
-GitHub Repository for CIS 269
+Welcome to the GitHub Repository for CIS 269!
+
+
