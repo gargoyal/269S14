@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pacman.exe" size="845312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pacman.exe" size="836608">
       <assemblyIdentity name="Pacman" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ghWQzbvH1fyOdlWNYr2s3+Mq2B8=</dsig:DigestValue>
+        <dsig:DigestValue>wbemTjsGhWZz1sppqut41qSBZXQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -69,6 +69,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>m71Isli/oazwUQY1tw6ad8nLym0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pacman_death.wav" size="17008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Mw7hI5TmW0JS3Dc6fv3J63oyniI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

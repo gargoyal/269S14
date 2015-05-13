@@ -4,8 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Windows.Forms;
+
+/*
+ * Just paused the game when you died
+ * 
+ * changed where you went when you were are point 18 and 1 x
+ */
 
 namespace Pacman
 {
@@ -241,13 +248,15 @@ namespace Pacman
      
       if ((x == 19) && (y == 10))
       {
-        x = 0;
+          //changed from 0 to 1
+        x = 1;
       }
       else
       {
         if ((x == 0) && (y == 10))
         {
-          x = 19;
+            //changed from 1 to 0
+          x = 18;
         }
       }
     }
@@ -326,7 +335,7 @@ namespace Pacman
         default:
           break;
       }
-
+        
       if (muren.Grid[y, x] == 1) 
       {
         wall = 1;
@@ -341,7 +350,7 @@ namespace Pacman
     {
       if (muren.Grid[ pacman.Y, pacman.X] == 0)
       {
-        score += 5;
+        score += 10;  //Changed from five, because even numbers are better than odd numbers you chump.
         lblScore.Text = Convert.ToString(score);
         muren.Grid[ pacman.Y, pacman.X] = 2;
       }
@@ -352,18 +361,36 @@ namespace Pacman
       if ((pacman.X == redGhost.X) && ( pacman.Y == redGhost.Y) || (pacman.X == greenGhost.X) && ( pacman.Y == greenGhost.Y)
           || (pacman.X == yellowGhost.X) && ( pacman.Y == yellowGhost.Y))
       {
+          //plays pacman_death.wav
+          playSimpleSound();
+          //just paused the game until u move again
         lives -= 1;
-        
-      }
-      if (lives == 0)
-      {
-        level = 1;
         tmrStep.Enabled = false;
-        MessageBox.Show("Jou score is: " + score, "Game Over...");
-        resetProgress();
-        paper.Clear(Color.Black);
-        resetField();
+        System.Threading.Thread.Sleep(2000);
+        pacman.Angle = 1;
+        pacman.X = 10;
+        pacman.Y = 12;
+        redGhost.X = 10;
+        redGhost.Y = 10;
+        redGhost.Angle = 3;
+        greenGhost.Angle = 3;
+        yellowGhost.Angle = 3;
+        greenGhost.X = 11;
+        greenGhost.Y = 10;
+        yellowGhost.X = 9;
+        yellowGhost.Y = 10;
+
+        if (lives == 0)
+        {
+            level = 1;
+            tmrStep.Enabled = false;
+            MessageBox.Show("Jou score is: " + score, "Game Over...");
+            resetProgress();
+            paper.Clear(Color.Black);
+            resetField();
+        }
       }
+
       lblLivesCount.Text = Convert.ToString(lives);
     }
 
@@ -461,8 +488,6 @@ namespace Pacman
     }  // Helpfunctie
 
 
-
-
     private void Main_Shown(object sender, EventArgs e) // Splashscreen komt tevoorschijn, Main wordt gehide
     {
       this.Hide();
@@ -471,14 +496,17 @@ namespace Pacman
       splash.Show();
     }
 
+    private void playSimpleSound()
+    {
+        SoundPlayer simpleSound = new SoundPlayer("../../pacman_Death.wav");
+        simpleSound.Play();
+    }
     private void tmrSplash_Tick_1(object sender, EventArgs e) // Splashscreen wordt gehide en Main komt tevoorschijn
     {
       splash.Close();
       this.Show();
       tmrSplash.Stop();
     }
-
-
 
     private void Main_Load(object sender, EventArgs e)
     {
