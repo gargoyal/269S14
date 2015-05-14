@@ -101,3 +101,15 @@ D:\jle\Documents\Visual Studio 2013\Projects\PacmanUpdate\Pacman\obj\x86\Debug\P
 D:\jle\Documents\Visual Studio 2013\Projects\PacmanUpdate\Pacman\obj\x86\Debug\Pacman.application
 D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.exe
 D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.pdb
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\bin\Debug\Pacman.exe.manifest
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\bin\Debug\Pacman.application
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\bin\Debug\Pacman.exe
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\bin\Debug\Pacman.pdb
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.csprojResolveAssemblyReference.cache
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.Help.resources
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.Main.resources
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.Properties.Resources.resources
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.Splash.resources
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.csproj.GenerateResource.Cache
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.exe.manifest
+D:\jle\Documents\Visual Studio 2013\Projects\Pacman Pro\Pacman\obj\x86\Debug\Pacman.application
