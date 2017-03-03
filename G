@@ -1,3 +1,0 @@
-"This is my first file for Git"
-# Now this file has been changed from the original
-Here is the change
